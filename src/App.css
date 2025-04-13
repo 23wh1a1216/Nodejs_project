@@ -1,0 +1,86 @@
+/* Custom styles to enhance Bootstrap */
+.resume-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.header {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  margin: -30px -30px 30px -30px;
+  padding: 30px;
+}
+
+.contact-info span:not(:last-child) {
+  margin-right: 10px;
+}
+
+.card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  border-radius: 8px 8px 0 0 !important;
+}
+
+.badge {
+  padding: 0.35em 0.65em;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: #0a66c2;
+  border-color: #0a66c2;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+}
+
+.btn-primary:hover {
+  background-color: #0957a8;
+  border-color: #0957a8;
+}
+
+/* Font Awesome icons alignment */
+.fas, .fab {
+  vertical-align: middle;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header {
+    padding: 20px;
+  }
+  
+  .display-4 {
+    font-size: 2.5rem;
+  }
+  
+  .lead {
+    font-size: 1rem;
+  }
+}
+
+/* Animation for section headers */
+h2 {
+  position: relative;
+  padding-left: 15px;
+}
+
+h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 50px;
+  background: linear-gradient(90deg, #0d6efd, #0dcaf0);
+}
